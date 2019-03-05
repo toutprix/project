@@ -1,0 +1,17 @@
+  <p>
+    <a href="/addcase">add Case</a> <b>  |  </b>
+    <a href="/today">Today</a> <b>  |  </b>
+  	<a href="/after">Adter day</a> <b>  |  </b>
+  	<a href="/after2">Adter day 2</a> <b>  |  </b>
+  	<a href="/after3">Adter day 3</a> <b>  |  </b>
+  	<a href="/all">Month</a> 
+  </p>
+
+
+<div class="ui main text container" *ngFor="let nw of List">
+    <h4 class="ui header">{{ nw.date }}</h4>
+    <p>{{ nw.make }}</p>
+    <hr>
+</div>
+
+<button class="btn btn-secondary" (click)="logout()">Logout</button>

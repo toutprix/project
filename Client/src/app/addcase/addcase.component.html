@@ -1,0 +1,18 @@
+<div class="row col-sm-6" style="max-width:350px;">
+<form name="form" #myForm="ngForm" novalidate (ngSubmit)="onSubmit(myForm)">
+					<div>
+					<label>Add new case</label>
+					</div>
+                    <div class="form-group">
+                        <label>Text Case</label>
+                        <input type="text" name="text"  [(ngModel)]="form.text"/>
+                    </div>
+                    <div class="form-group">
+                    	<label>Date</label>
+                        <input type="date" name="calendar" max="2100-06-04" min="2019-01-29" [(ngModel)]="form.calendar">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-default" value="Submit" />
+                    </div>
+                </form>
+                </div>
